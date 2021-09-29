@@ -1,0 +1,55 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "artist": "M12 STUDIO",
+        "title": "Conejos Fieldwork Site, La Florida, Colorado",
+        "description": "<p>The Conejos Fieldwork Site is located outside of Antonito, Colorado, on a 10-acre historic adobe ranch. Serving as M12’s HQ for the Landlines Initiative, the site is part of a multi-generation family ranch of nearly 500 acres. Ronald Rael and family grow hay, manage historic acequias, and preserve historic adobe structures throughout Southern Colorado. In collaboration with Rael, M12 utilizes part of the ranch to invite contributors to work in and with the living material around Conejos County, one of the five poorest counties in Colorado, but culturally one of its richest. The unique physical geography, cultural and economic diversity, and extraordinary environmental phenomena all enhance our work on the Landlines Initiative. </p>",
+        "images": [
+          {
+            "file": "M12_01.jpg",
+            "caption": "One of the five poorest counties in Colorado, but culturally one of its richest."
+          },
+          {
+            "file": "M12_02.jpg"
+          },
+          {
+            "file": "M12_03.jpg",
+            "caption": "One of the five poorest counties in Colorado, but culturally one of its richest."
+          },
+          {
+            "file": "M12_04.jpg"
+          },
+          {
+            "file": "M12_06.jpg"
+          }
+        ],
+        "alt": "Conejos <br>Fieldwork Site"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-105.92538051959495, 37.06187200399451]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "artist": "Kristy Duran",
+        "title": "Seasons in La Botica: Microcosm of the San Luis Valley",
+        "description": "<p>Kristy Duran’s roots in the San Luis Valley go back 180 years or more, making it her home but also a place for her ongoing research. Duran tells us, “Growing up, I always knew this place was special in a way that I could not easily articulate. It wasn’t until I returned to the valley after a 20-year absence, that I began to find the words.” For Landlines, Duran is focused on <i>La Botica</i>, a region rich in botanical diversity located in a remote part of the south valley. <i>La Botica</i> is an archaeological site with a unique ecological setting that sits on a shelf that cannot be seen from the canyon below or the plains above. For Landlines, Duran will share the unique geology and biology of <i>La Botica</i> as well as the stories of the people who visited the land over the past several hundred years.</p>",
+        "images": {
+          "file": "M12_01.jpg",
+          "caption": "this is a test"
+        },
+
+        "alt": "Seasons in La Botica"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-105.87673326457147, 37.46810043923201]
+      }
+    }
+  ]
+}
