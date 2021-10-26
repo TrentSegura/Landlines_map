@@ -8,7 +8,14 @@ function App() {
   const [isOpenAbout, setIsOpenAbout] = useState(false);
 
   const openAbout = () => {
-    setIsOpenAbout(!isOpenAbout);
+    if (isOpenAbout) {
+      const aboutSection = document.getElementById("about-section");
+      aboutSection.scrollIntoView({
+        behavior: "smooth",
+      });
+    } else {
+      setIsOpenAbout(true);
+    }
   };
 
   return (

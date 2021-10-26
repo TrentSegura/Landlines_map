@@ -4,15 +4,15 @@ import landLines from "../../data/LandlinesWhite";
 import landLinesThin from "../../data/LandlinesThin";
 import { Bttn } from "./styles";
 
-// import { ImInfo } from "react-icons/im";
 import Header from "../Header";
 import ProjectComponent from "../ProjectComponent";
 import projects from "../../data/landlines.json";
 import Sidebar from "../Sidebar";
-import Pins from "../Pins";
 import { Transition } from "react-transition-group";
 
-// import { BrowserRouter as Router, Route } from "react-router-dom";
+// import LandmarksData from "../../data/map.json";
+import Landmarks from "../Landmarks";
+// import LandmarksComponent from "../LandmarksComponent";
 
 if (!("remove" in Element.prototype)) {
   Element.prototype.remove = function () {
@@ -67,6 +67,17 @@ const Map = ({ openAbout }) => {
 
     // Load the Lines in Landlines
     map.on("load", () => {
+      // // Landmarks (aka ⚪ )
+      // map.addSource("landmarksData", {
+      //   type: "geojson",
+      //   data: LandmarksData,
+      // });
+      // map.addLayer({
+      //   id: "landmarks-layer",
+      //   type: "circle",
+      //   source: "landmarksData",
+      // });
+
       // Thick White Lines (Aka the Landlines)
       map.addSource("landlines", {
         type: "geojson",
@@ -174,7 +185,7 @@ const Map = ({ openAbout }) => {
           projects={projects}
           map={map}
         />
-        <Pins map={map} className="landmarks" />
+        <Landmarks map={map} />
         <Bttn className="about-bttn" onClick={openAbout}>
           About Landlines
         </Bttn>

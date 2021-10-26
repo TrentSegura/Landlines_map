@@ -1,0 +1,13 @@
+.mapboxgl-marker {
+  z-index: 100;
+}
+
+.mapboxgl-popup {
+  z-index: 101;
+}
+
+.mapboxgl-ctrl.mapboxgl-ctrl-attrib {
+  padding: 0 5px;
+  background-color: hsla(0, 0%, 100%, 0.2);
+  margin: 0;
+}

@@ -12,6 +12,9 @@ export const GlobalStyle = createGlobalStyle`
   :root {
   --white: #dadada;
 }
+
+
+
 `;
 
 export const Bttn = styled.button`

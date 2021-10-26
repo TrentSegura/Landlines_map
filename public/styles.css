@@ -15,16 +15,18 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 
-  background-color: #121212;
   font-family: proxima-nova, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
-
   margin: 0;
+  z-index: -1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #272722;
+}
+
+body {
+  background-color: #121212;
 }
 
 div#root {
@@ -106,11 +108,17 @@ div.contributors {
   display: flex;
 }
 
-.page {
+/* .page {
   margin-bottom: 80vh;
-  z-index: 0;
+  z-index: 1;
   background: #fff;
-}
+  pointer-events: none;
+} */
+
+/* .about {
+  z-index: 2;
+  background: #fff;
+} */
 
 .footer {
   position: fixed;
@@ -118,16 +126,13 @@ div.contributors {
   left: 0;
   min-height: 80vh;
   width: 100vw;
-  background-color: rgba(12, 12, 12, 0.95);
-  z-index: -10;
+  z-index: -1;
+  background: #121212;
+
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.site-info {
-  max-width: 400px;
-  margin: 7.5vw;
 }
 
 .mc-field-group {
@@ -165,12 +170,12 @@ div.contributors {
   width: 100%;
 }
 
-input {
+/* input {
   margin-top: 20px;
-  background: none;
+  background: pink;
   border: none;
   outline: none;
-}
+} */
 
 .button {
   margin-top: 38px;
@@ -256,18 +261,4 @@ div.partners {
 
 div.partners img {
   max-width: 100%;
-}
-
-.mapboxgl-marker {
-  z-index: 100;
-}
-
-.mapboxgl-popup {
-  z-index: 101;
-}
-
-.mapboxgl-ctrl.mapboxgl-ctrl-attrib {
-  padding: 0 5px;
-  background-color: hsla(0, 0%, 100%, 0.2);
-  margin: 0;
 }

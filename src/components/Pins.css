@@ -2,12 +2,11 @@
 #pin-marker {
   cursor: pointer;
   z-index: 0;
-}
-
-#pin-marker::after {
-  content: "⚪";
-  font-size: 7px;
-  z-index: 0;
+  font-size: 8px;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
 }
 
 .mapboxgl-popup-content .pins {
